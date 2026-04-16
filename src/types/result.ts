@@ -23,7 +23,7 @@ export type FailureCategory =
  */
 export interface ExecutionStrategyInfo {
   startedWith: "fetch_first" | "browser_first";
-  escalatedToBrowser: boolean;
+  escalatedToBrowserbase: boolean;
   primitiveSequence: PrimitiveType[];
   usedAgent: boolean;
   usedObserve: boolean;

@@ -9,7 +9,7 @@ export const runConfig = {
   // Configuration fed directly to new Stagehand() instances
   stagehand: {
     env: "BROWSERBASE" as const,
-    modelName: "gpt-4o", // Pre-selected as the ideal MVP model to keep things simple
+    modelName: "gpt-4o" as const, // Pre-selected as the ideal MVP model to keep things simple
     logger: () => {},    // Null logger to keep our CLI output clean
   },
   
