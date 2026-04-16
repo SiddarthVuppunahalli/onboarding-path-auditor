@@ -1,0 +1,26 @@
+{
+  "name": "onboarding-path-auditor",
+  "version": "1.0.0",
+  "description": "Audit public onboarding flows using Stagehand/Browserbase",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "run:audit": "ts-node src/runner/runSiteAudit.ts",
+    "run:site": "ts-node src/runner/runSiteAudit.ts",
+    "report": "ts-node src/reporting/buildJsonReport.ts",
+    "smoke": "ts-node src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@browserbasehq/stagehand": "^1.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
